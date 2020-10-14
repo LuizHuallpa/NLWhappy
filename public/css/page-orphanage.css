@@ -73,6 +73,12 @@ main {
     border-radius: 2rem;
     overflow: hidden;
     opacity: 0.6;
+    transition: opacity 0.2;
+}
+
+.images button:hover,
+.images button.active {
+    opacity: 1;
 }
 
 .images button img {
@@ -90,7 +96,7 @@ main {
 
 .orphanage-details-content h1 {
     color: #4d6f80;
-    font: size 5.4rems;
+    font: size 5.4rem;
     line-height: 1.5;
     margin-bottom: 0.8rem;
 }
@@ -100,6 +106,9 @@ main {
     color: #5c8599;
     margin-top: 2.4rem;
 }
+
+
+/* map */
 
 .map-container {
     margin-top: 6.4rem;
@@ -113,12 +122,12 @@ main {
     height: 28rem;
 }
 
-.map-container {
+.map-container footer {
     padding: 2rem 0;
     text-align: center;
 }
 
-.map-container a {
+.map-container footer a {
     color: #0089a5;
     text-decoration: none;
 }
@@ -131,7 +140,7 @@ main {
 .orphanage-details-content hr {
     width: 100%;
     height: 1px;
-    border: none;
+    border: 0;
     background: #d3e2e6;
     margin: 6.4rem 0;
 }
@@ -161,7 +170,6 @@ main {
 .open-details .hour {
     background: linear-gradient(149.97deg, #E6F7FB 8.13%, #FFFFFF 92.67%);
     border: 1px solid #B3DAE2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     color: rgba(92, 133, 153, 1);
 }
