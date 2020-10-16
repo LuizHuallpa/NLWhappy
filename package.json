@@ -1,0 +1,25 @@
+{
+    "name": "NLWhappy",
+    "version": "1.0.0",
+    "description": "Projeto do bootcamp da semana NLW da Rocket Seat",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon src/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LuizHuallpa/NLWhappy.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/LuizHuallpa/NLWhappy/issues"
+    },
+    "homepage": "https://github.com/LuizHuallpa/NLWhappy#readme",
+    "dependencies": {
+        "express": "^4.17.1",
+        "hbs": "^4.1.1",
+        "nodemon": "^2.0.5"
+    }
+}

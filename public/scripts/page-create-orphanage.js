@@ -7,7 +7,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 //create icon
 const icon = L.icon({
-iconUrl: "./public/imagens/map-marker.svg",
+iconUrl: "/imagens/map-marker.svg",
 iconSize:[58.68],
 iconAnchor:[29,68],
 
@@ -82,7 +82,7 @@ function toggleSelect(event){
     const button = event.currentTarget
     button.classList.add('active')
     //update the input hidden with the selected value
-    const input = document.querySelector('[name="open-on-weekends"]')
+    const input = document.querySelector('[name="open_on_weekends"]')
 
     input.value = button.dataset.value
 

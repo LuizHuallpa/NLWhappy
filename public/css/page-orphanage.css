@@ -103,7 +103,7 @@ main {
     color: rgba(92, 133, 153, 1);
 }
 
-.open-details .open-on-weekends {
+.open-details .open_on_weekends {
     background: linear-gradient(154.16deg, #EDFFF6 7.85%, #FFFFFF 91.03%);
     border: 1px solid #A1E9C5;
     border-radius: 20px;
