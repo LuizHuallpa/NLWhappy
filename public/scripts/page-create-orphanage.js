@@ -92,4 +92,12 @@ function toggleSelect(event){
    
 }
 
+function validate(event){
+    //validar se lat e lng estão preenchidos!!!!!!!!!!
+    const location = true;
+    if( location)
+    event.preventDefault()
+    alert('Selecione uma localização no mapa!')
+}
+
 

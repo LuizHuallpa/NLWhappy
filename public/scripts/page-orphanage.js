@@ -1,3 +1,5 @@
+
+
 const options = {
     dragging: false,
     touchZoom: false,
@@ -5,10 +7,12 @@ const options = {
     scrollWheelZoom: false,
     zoomControl: false
 }
-
+//get values from HTML
+const lat = document.querySelector('span[data-lat]').dataset.lat
+const lng = document.querySelector('span[data-lng]').dataset.lng
 
 //create map
-const map = L.map('mapid', options).setView([-22.9181815,-47.0741569], 13);
+const map = L.map('mapid', options).setView([lat, lng], 15);
 //create and add tile layer
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -23,9 +27,10 @@ popupAnchor:[170,2]
 })
 
 
+//create and add marker
 
 L
-    .marker([-22.9181815,-47.0741569], {icon})
+    .marker([lat,lng], {icon})
     .addTo(map)
     
     // Image Gallery

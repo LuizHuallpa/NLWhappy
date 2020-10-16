@@ -28,14 +28,14 @@
             <img src="/imagens/map-marker.svg" alt="Happy" />
             <footer>
                 <button onclick="history.back()">
-                    <img src="/imagens/arrow-back.svg" alt="Voltar" />
+                    <img src="/imagens/arrow-back.svg" alt="Voltar" onsubmit="validate(event)" />
                 </button>
             </footer>
         </aside>
 
 
         <main class="animate-appear with-sidebar">
-            <form action="">
+            <form action="save-orphanage" method="post">
                 <fieldset>
                     <legend>Dados</legend>
                     <div class="map-container">
@@ -69,7 +69,7 @@
                         <div class="images-upload" id="images">
 
                             <div class="new-upload">
-                                <input name="images" placeholder="Cole o link da foto aqui" required>
+                                <input name="images" placeholder="Cole o link da foto aqui" required type="url">
                                 <span onclick="deleteField(event)">
                                     <img src="/imagens/remove-file.svg" alt="Remover foto ">
                                 </span>
